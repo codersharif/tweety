@@ -1,6 +1,6 @@
 ## Tweety
 
-<p align="center"><img src="https://github.com/codersharif/tweety/blob/tweety.png" width="400"></p>
+<p align="center"><img src="https://github.com/codersharif/tweety/blob/main/tweety.png" width="500"></p>
 
 ## License
 
