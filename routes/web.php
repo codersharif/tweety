@@ -21,6 +21,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+//login with facebook
+Route::get('login/google', 'Auth\LoginController@googleRedirect');
+Route::get('login/google/callback', 'Auth\LoginController@googleCallback');
+
+//login with github
+Route::get('login/github', 'Auth\LoginController@githubRedirectToProvider');
+Route::get('login/github/callback', 'Auth\LoginController@githubHandleProviderCallback');
+
 
 Route::middleware('auth')->group(function() {
     Route::get('/tweets', 'TweetsController@index')->name('home');

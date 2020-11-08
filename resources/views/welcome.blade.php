@@ -79,6 +79,10 @@
                 <div class="links">
                     @auth
                     <a href="{{ route('home') }}">Home</a>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Welcome</span>
+                        <span class="sr-only">{{Auth()->user()->name}}</span>
+                    </div>
                     @else
                     <a href="{{ route('login') }}">Login</a>
                     <a href="{{ route('register') }}">Register</a>

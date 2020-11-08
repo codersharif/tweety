@@ -80,6 +80,19 @@
 
                 <a href="{{ route('password.request') }}" class="text-xs text-gray-700">Forgot Your Password?</a>
             </div>
+
+            <div class="mt-5">
+                <a href="{{URL::to('login/google')}}"
+                class="bg-gray-500 text-white rounded py-2 px-4 hover:bg-blue-500 mr-2"
+                    >
+                    Login with Google
+                </a>
+                <a href="{{URL::to('login/github')}}"
+                class="bg-gray-500 text-white rounded py-2 px-4 hover:bg-blue-500 mr-2"
+                    >
+                    Login with Github
+                </a>
+            </div>
         </form>
     </x-panel>
 </div>
